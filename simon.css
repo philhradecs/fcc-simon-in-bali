@@ -1,0 +1,182 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: url("https://s26.postimg.cc/nhfos2xfd/04354eaef942db7866c186f1e72b1e22.jpg")
+      no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    background: transparent;
+    position: relative;
+  }
+  
+  /* ------- buttons -------------------- */
+  
+  .button-wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 250px 250px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .button {
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+  }
+  .button:hover {
+    opacity: 0.85;
+  }
+  
+  #one.button {
+    background: rgb(202, 189, 167);
+    border-radius: 100% 0 0 0;
+  }
+  #two.button {
+    background: rgb(162, 174, 190);
+    border-radius: 0 100% 0 0;
+  }
+  #three.button {
+    background: rgb(167, 130, 149);
+    border-radius: 0 0 0 100%;
+  }
+  #four.button {
+    background: rgb(123, 119, 124);
+    border-radius: 0 0 100% 0;
+  }
+  
+  /* ------------ center ------------ */
+  
+  .center-wrapper {
+    position: absolute;
+    top: 155px;
+    left: 155px;
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    box-shadow: 3px 7px 40px -2px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+  }
+  
+  #center {
+    width: 100%;
+    height: 100%;
+    background: url("https://s26.postimg.cc/649zquwm1/center.jpg") center;
+    background-size: contain;
+    border-radius: 100%;
+    border: 1px solid rgba(90, 90, 90, 0.7);
+    border: 1px solid rgba(121, 105, 105, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #display-text {
+    font-family: "Gabriela", serif;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  /* ------------- animation ------------- */
+  
+  .highlighted {
+    animation: playback 600ms ease backwards running;
+  }
+  
+  @keyframes playback {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .selected {
+    animation: clicked 600ms ease backwards running;
+  }
+  
+  @keyframes clicked {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(1.4);
+      background-color: transparent;
+    }
+  }
+  
+  .center-animation {
+    animation: rotate 5s ease-in-out alternate backwards;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ---------- controls --------------- */
+  
+  #start {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    font-family: "Gabriela", serif;
+    font-size: 6.8em;
+    color: rgba(250, 250, 250, 0.9);
+    transition: color 300ms ease-out;
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  #start:hover {
+    color: rgba(195, 181, 113, 0.9);
+  }
+  
+  #start.faded {
+    color: transparent;
+    text-shadow: 1px 1px 8px transparent;
+  }
+  
+  #settings {
+    position: absolute;
+    bottom: 55px;
+    right: 65px;
+    font-family: "Gabriela", serif;
+    color: rgba(250, 250, 250, 0.9);
+    cursor: pointer;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  #strict {
+    font-size: 2em;
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+  
+  #strict.enabled:hover,
+  .strict-selected {
+    color: rgba(146, 98, 121, 0.9);
+    background: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 8px transparent;
+  }
+  
+  #reset {
+    font-size: 1.5em;
+    padding: 0 6px;
+  }  
+
+  #reset:hover {
+    color: rgba(195, 181, 113, 0.9);
+  }

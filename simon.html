@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="simon.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="button-wrapper">
+      <div class="button" id="one" data-value="0"></div>
+      <div class="button" id="two" data-value="1"></div>
+      <div class="button" id="three" data-value="2"></div>
+      <div class="button" id="four" data-value="3"></div>
+    </div>
+    <div class="center-wrapper">
+      <div id="center">
+        <div id="display-text"></div>
+      </div>
+    </div>
+  </div>
+  <div id="start">Start</div>
+  <div id="settings">
+    <div id="strict" class="enabled">Strict Mode</div>
+    <hr>
+    <div id="reset">Restart</div>
+  </div>
+  
+  <script src="simon.js"></script>
+</body>
+
+</html>

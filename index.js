@@ -155,8 +155,8 @@ const handler = {
   waitForClickEffect: 600,
   colorClick: function(e) {
     let btn = Number(e.target.dataset.value);
-    view.colorClickEffect(e.target);
     sounds[btn].play(); // ------ audio ---------
+    view.colorClickEffect(e.target);
     setTimeout(function() {
       if (simon.check(btn)) {
         simon.accept();

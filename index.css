@@ -99,7 +99,7 @@ body {
   }
   
   .selected {
-    animation: clicked 600ms ease backwards running;
+    animation: clicked 450ms ease backwards running;
   }
   
   @keyframes clicked {

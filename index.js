@@ -35,7 +35,7 @@ const simon = {
   position: 0,
   strictMode: false,
   speedChangeSteps: [7, 14],
-  intervals: [900, 600, 300],
+  intervals: [900, 700, 400],
   activeInterval: 0,
   waitBeforePlay: 1800,
   showErrorDuration: 1800,
@@ -130,7 +130,7 @@ const simon = {
   resetGame: function() {
     this.stepCount = 0;
     this.sequence = [];
-    this.interval = 500;
+    this.interval = 0;
     this.allowInput(false);
     this.resetPosition();
     view.print('');

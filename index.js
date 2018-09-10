@@ -1,9 +1,10 @@
+// variables defined as var in order to avoid problem in webkit where id and variable name can't have identical names
 const buttons = document.getElementsByClassName('button');
-const display = document.getElementById('display-text');
-const start = document.getElementById('start');
-const strict = document.getElementById('strict');
-const reset = document.getElementById('reset');
-const center = document.getElementById('center');
+var display = document.getElementById('display-text');
+var start = document.getElementById('start');
+var strict = document.getElementById('strict');
+var reset = document.getElementById('reset');
+var center = document.getElementById('center');
 
 var sounds = {
   0: new Howl({

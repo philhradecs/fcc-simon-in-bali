@@ -9,22 +9,22 @@ var center = document.getElementById('center');
 var sounds = {
   0: new Howl({
     src: [
-      'https://res.cloudinary.com/baumzeit/video/upload/v1523711744/04-58692__arioke__kalimba-lam10-c4-nail-med.mp3'
+      'https://res.cloudinary.com/philhradecs/video/upload/v1523711744/04-58692__arioke__kalimba-lam10-c4-nail-med.mp3'
     ]
   }),
   1: new Howl({
     src: [
-      'https://res.cloudinary.com/baumzeit/video/upload/v1523711743/03-58684__arioke__kalimba-lam06-f3-nail-med.mp3'
+      'https://res.cloudinary.com/philhradecs/video/upload/v1523711743/03-58684__arioke__kalimba-lam06-f3-nail-med.mp3'
     ]
   }),
   2: new Howl({
     src: [
-      'https://res.cloudinary.com/baumzeit/video/upload/v1523711744/01-58680__arioke__kalimba-lam04-d3-nail-med.mp3'
+      'https://res.cloudinary.com/philhradecs/video/upload/v1523711744/01-58680__arioke__kalimba-lam04-d3-nail-med.mp3'
     ]
   }),
   3: new Howl({
     src: [
-      'https://res.cloudinary.com/baumzeit/video/upload/v1523711744/02-58682__arioke__kalimba-lam05-e3-nail-med.mp3'
+      'https://res.cloudinary.com/philhradecs/video/upload/v1523711744/02-58682__arioke__kalimba-lam05-e3-nail-med.mp3'
     ]
   })
 };
